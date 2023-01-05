@@ -1,0 +1,91 @@
+.register, .login {
+  display: flex;
+}
+
+.register-left, .login-left {
+  width: 30%;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-form-heading, .login-form-heading {
+  color: var(--text-color);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.register-right, .login-right {
+  width: 70%;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.register-form, .login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5rem;
+  width: 35%;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.register-form input, .login-form input {
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  border-bottom: solid 1px var(--boder-color);
+}
+
+.register-form button, .login-form button {
+  margin-bottom: 1.6rem;
+}
+
+.auth-message {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.login-form-bottom, .register-form-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-form-bottom a, .register-form-bottom a{
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+.login-form-bottom a:hover, .register-form-bottom a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .register-form, .login-form {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .register-left, .login-left {
+    display: none;
+  }
+
+  .register, .login {
+    background-color: var(--primary-color);
+  }
+
+  .register-form, .login-form {
+    width: 70%;
+    left: 50%;
+  }
+}

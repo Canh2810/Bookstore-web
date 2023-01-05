@@ -1,0 +1,37 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  position: relative;
+  border: solid 1px var(--primary-color);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.search-mobile {
+  display: none;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.fa-magnifying-glass {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .search-mobile {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0.8rem;
+  }
+
+  .search-pc {
+    display: none;
+  }
+}
